@@ -43,7 +43,7 @@ const Welcome = () => {
                 Accross the World
             </h1>
             <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
-               Send crypto to your family and friends easily on xpeer
+               Send crypto to your family and friends easily on xpeerz
             </p>
             {!currentAccount && 
             <button type="button" onClick={() => connectWallet()} className="flex felx-row justify-center items-center my-5 cursor-pointer bg-[#2952e3] p-3 rounded-full hover:bg-[#2546bd] ]">
