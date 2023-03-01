@@ -1,20 +1,22 @@
-import { Footer,Navbar,Welcome,Services, Transactions } from "./components"
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import Home from "./pages/Home";
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home/>,
+  },
+]);
 
 
 const App = () =>{
   
 
   return (
-    <div className="m-h-screen">
-      <div className="gradient-bg-welcome">
-        <Navbar/>
-        <Welcome/>
-      </div>
-      <Services/>
-      <Transactions/>
-      <Footer/>
-    </div>
+<RouterProvider router={router} />
   )
 }
 
